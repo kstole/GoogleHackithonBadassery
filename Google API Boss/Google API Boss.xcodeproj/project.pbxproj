@@ -52,9 +52,9 @@
 		A9596AF41A17EC4F002CD1D7 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		A9596AF51A17EC4F002CD1D7 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		A9596AF61A17EC4F002CD1D7 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		A9596AF91A17EC99002CD1D7 /* AllAPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAPIViewController.h; sourceTree = "<group>"; };
-		A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAPIViewController.m; sourceTree = "<group>"; };
-		A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllAPIViewController.xib; sourceTree = "<group>"; };
+		A9596AF91A17EC99002CD1D7 /* AllAPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllAPIViewController.h; path = ../AllAPIViewController.h; sourceTree = "<group>"; };
+		A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllAPIViewController.m; path = ../AllAPIViewController.m; sourceTree = "<group>"; };
+		A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllAPIViewController.xib; path = ../AllAPIViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +78,6 @@
 		A9596ABD1A17E8C8002CD1D7 = {
 			isa = PBXGroup;
 			children = (
-				A9596AF91A17EC99002CD1D7 /* AllAPIViewController.h */,
-				A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */,
-				A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */,
 				A9596AC81A17E8C9002CD1D7 /* Google API Boss */,
 				A9596AE21A17E8C9002CD1D7 /* Google API BossTests */,
 				A9596AC71A17E8C9002CD1D7 /* Products */,
@@ -99,6 +96,9 @@
 		A9596AC81A17E8C9002CD1D7 /* Google API Boss */ = {
 			isa = PBXGroup;
 			children = (
+				A9596AF91A17EC99002CD1D7 /* AllAPIViewController.h */,
+				A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */,
+				A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */,
 				A9596ACD1A17E8C9002CD1D7 /* AppDelegate.h */,
 				A9596ACE1A17E8C9002CD1D7 /* AppDelegate.m */,
 				A9596AD01A17E8C9002CD1D7 /* ViewController.h */,
