@@ -38,19 +38,10 @@ class BaseTableTableViewController: UITableViewController {
 	
 	// MARK:
 	
-	func configureCell(cell: UITableViewCell, forAPI api: Product) {
-		cell.textLabel.text = product.title
+	func configureCell(cell: UITableViewCell, forAPI api: API) {
+		cell.textLabel.text = API.title
 		
-		// Build the price and year string.
-		//
-		// use NSNumberFormatter to get the currency format out of this NSNumber (product.introPrice)
-		let numberFormatter = NSNumberFormatter()
-		numberFormatter.numberStyle = .CurrencyStyle
-		numberFormatter.formatterBehavior = .BehaviorDefault
-		
-		let priceString = numberFormatter.stringFromNumber(product.introPrice)
-		
-		cell.detailTextLabel?.text = "\(priceString!) | \(product.yearIntroduced)"
+		cell.detailTextLabel?.text = "APIicon"
 	}
 	
     /*
