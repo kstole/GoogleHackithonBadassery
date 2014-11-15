@@ -11,10 +11,15 @@ import Foundation
 class GoogleAPI: NSObject, NSCoding {
 	// MARK: Properties
 	
+	let kind: String
+	let id: String
+	let name: String
+	let version: String
 	let title: String
-	let data1: String
-	let data2: String
-	let data3: String
+	let description: String
+	let discoveryRestURL: String
+	let icon16: String
+	let icon32: String
 	
 	// MARK: Initializers
 	
