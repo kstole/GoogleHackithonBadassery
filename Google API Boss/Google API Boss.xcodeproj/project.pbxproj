@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A9596ACC1A17E8C9002CD1D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596ACB1A17E8C9002CD1D7 /* main.m */; };
 		A9596ACF1A17E8C9002CD1D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596ACE1A17E8C9002CD1D7 /* AppDelegate.m */; };
-		A9596AD21A17E8C9002CD1D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AD11A17E8C9002CD1D7 /* ViewController.m */; };
 		A9596AD51A17E8C9002CD1D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9596AD31A17E8C9002CD1D7 /* Main.storyboard */; };
 		A9596AD71A17E8C9002CD1D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9596AD61A17E8C9002CD1D7 /* Images.xcassets */; };
 		A9596ADA1A17E8C9002CD1D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AD81A17E8C9002CD1D7 /* LaunchScreen.xib */; };
@@ -20,6 +19,8 @@
 		A9596AF81A17EC4F002CD1D7 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AF61A17EC4F002CD1D7 /* SearchViewController.xib */; };
 		A9596AFC1A17EC99002CD1D7 /* AllAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */; };
 		A9596AFD1A17EC99002CD1D7 /* AllAPIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */; };
+		BD9334731A17F189000EA22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334711A17F189000EA22F /* ViewController.swift */; };
+		BD9334741A17F189000EA22F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9334721A17F189000EA22F /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		A9596ACB1A17E8C9002CD1D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9596ACD1A17E8C9002CD1D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9596ACE1A17E8C9002CD1D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A9596AD01A17E8C9002CD1D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A9596AD11A17E8C9002CD1D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A9596AD41A17E8C9002CD1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9596AD61A17E8C9002CD1D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9596AD91A17E8C9002CD1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -55,6 +54,9 @@
 		A9596AF91A17EC99002CD1D7 /* AllAPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllAPIViewController.h; path = ../AllAPIViewController.h; sourceTree = "<group>"; };
 		A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllAPIViewController.m; path = ../AllAPIViewController.m; sourceTree = "<group>"; };
 		A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllAPIViewController.xib; path = ../AllAPIViewController.xib; sourceTree = "<group>"; };
+		BD93346C1A17F038000EA22F /* Google API Boss-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Google API Boss-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD9334711A17F189000EA22F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD9334721A17F189000EA22F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,8 @@
 				A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */,
 				A9596ACD1A17E8C9002CD1D7 /* AppDelegate.h */,
 				A9596ACE1A17E8C9002CD1D7 /* AppDelegate.m */,
-				A9596AD01A17E8C9002CD1D7 /* ViewController.h */,
-				A9596AD11A17E8C9002CD1D7 /* ViewController.m */,
+				BD9334711A17F189000EA22F /* ViewController.swift */,
+				BD9334721A17F189000EA22F /* ViewController.xib */,
 				A9596AD31A17E8C9002CD1D7 /* Main.storyboard */,
 				A9596AD61A17E8C9002CD1D7 /* Images.xcassets */,
 				A9596AD81A17E8C9002CD1D7 /* LaunchScreen.xib */,
@@ -113,6 +115,7 @@
 				A9596AF41A17EC4F002CD1D7 /* SearchViewController.h */,
 				A9596AF51A17EC4F002CD1D7 /* SearchViewController.m */,
 				A9596AF61A17EC4F002CD1D7 /* SearchViewController.xib */,
+				BD93346C1A17F038000EA22F /* Google API Boss-Bridging-Header.h */,
 			);
 			path = "Google API Boss";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9334741A17F189000EA22F /* ViewController.xib in Resources */,
 				A9596AD51A17E8C9002CD1D7 /* Main.storyboard in Resources */,
 				A9596ADA1A17E8C9002CD1D7 /* LaunchScreen.xib in Resources */,
 				A9596AD71A17E8C9002CD1D7 /* Images.xcassets in Resources */,
@@ -246,10 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9596AD21A17E8C9002CD1D7 /* ViewController.m in Sources */,
 				A9596ACF1A17E8C9002CD1D7 /* AppDelegate.m in Sources */,
 				A9596AF71A17EC4F002CD1D7 /* SearchViewController.m in Sources */,
 				A9596AFC1A17EC99002CD1D7 /* AllAPIViewController.m in Sources */,
+				BD9334731A17F189000EA22F /* ViewController.swift in Sources */,
 				A9596ACC1A17E8C9002CD1D7 /* main.m in Sources */,
 				A9596AF21A17EC05002CD1D7 /* APIViewController.m in Sources */,
 			);
@@ -375,9 +379,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Google API Boss/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Google API Boss/Google API Boss-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -385,9 +392,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Google API Boss/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Google API Boss/Google API Boss-Bridging-Header.h";
 			};
 			name = Release;
 		};
