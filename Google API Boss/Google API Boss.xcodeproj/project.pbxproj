@@ -21,6 +21,10 @@
 		A9596AFD1A17EC99002CD1D7 /* AllAPIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */; };
 		BD9334731A17F189000EA22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334711A17F189000EA22F /* ViewController.swift */; };
 		BD9334741A17F189000EA22F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9334721A17F189000EA22F /* ViewController.xib */; };
+		BD9334761A180046000EA22F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334751A180046000EA22F /* BaseTableViewController.swift */; };
+		BD9334781A180334000EA22F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334771A180334000EA22F /* MainTableViewController.swift */; };
+		BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334791A180379000EA22F /* ResultsTableController.swift */; };
+		BD93347C1A180723000EA22F /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD93347B1A180723000EA22F /* GoogleAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		BD93346C1A17F038000EA22F /* Google API Boss-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Google API Boss-Bridging-Header.h"; sourceTree = "<group>"; };
 		BD9334711A17F189000EA22F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD9334721A17F189000EA22F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		BD9334751A180046000EA22F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		BD9334771A180334000EA22F /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		BD9334791A180379000EA22F /* ResultsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
+		BD93347B1A180723000EA22F /* GoogleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */,
 				A9596ACD1A17E8C9002CD1D7 /* AppDelegate.h */,
 				A9596ACE1A17E8C9002CD1D7 /* AppDelegate.m */,
+				BD9334751A180046000EA22F /* BaseTableViewController.swift */,
+				BD93347B1A180723000EA22F /* GoogleAPI.swift */,
+				BD9334771A180334000EA22F /* MainTableViewController.swift */,
+				BD9334791A180379000EA22F /* ResultsTableController.swift */,
 				BD9334711A17F189000EA22F /* ViewController.swift */,
 				BD9334721A17F189000EA22F /* ViewController.xib */,
 				A9596AD31A17E8C9002CD1D7 /* Main.storyboard */,
@@ -253,8 +265,12 @@
 				A9596ACF1A17E8C9002CD1D7 /* AppDelegate.m in Sources */,
 				A9596AF71A17EC4F002CD1D7 /* SearchViewController.m in Sources */,
 				A9596AFC1A17EC99002CD1D7 /* AllAPIViewController.m in Sources */,
+				BD93347C1A180723000EA22F /* GoogleAPI.swift in Sources */,
+				BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */,
 				BD9334731A17F189000EA22F /* ViewController.swift in Sources */,
+				BD9334781A180334000EA22F /* MainTableViewController.swift in Sources */,
 				A9596ACC1A17E8C9002CD1D7 /* main.m in Sources */,
+				BD9334761A180046000EA22F /* BaseTableViewController.swift in Sources */,
 				A9596AF21A17EC05002CD1D7 /* APIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
