@@ -165,9 +165,13 @@ class AllAPITableViewController: BaseTableViewController, UISearchBarDelegate, U
 			selectedAPI = resultsTableController.filteredAPIs[indexPath.row]
 		}
 		
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		
+		let detailViewController = storyboard.instantiateViewControllerWithIdentifier("api_detail_view") as APIDetailViewController
+		
 		// Set up the detail view controller to show.
 		/* REQUIRES SOME OBJECTIVE-C VERSION OF THE forProduct METHOD */
-		let detailViewController = APIDetailViewController.forAPI(selectedAPI)
+		// let detailViewController = APIDetailViewController.show(selectedAPI)
 		
 		// Note: Should not be necessary but current iOS 8.0 bug requires it.
 		tableView.deselectRowAtIndexPath(tableView.indexPathForSelectedRow()!, animated: false)
