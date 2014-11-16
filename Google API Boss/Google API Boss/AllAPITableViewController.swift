@@ -169,6 +169,8 @@ class AllAPITableViewController: BaseTableViewController, UISearchBarDelegate, U
 		
 		let detailViewController = storyboard.instantiateViewControllerWithIdentifier("api_detail_view") as APIDetailViewController
 		
+		detailViewController.showSpecificApi(selectedAPI.index)
+		
 		// Set up the detail view controller to show.
 		/* REQUIRES SOME OBJECTIVE-C VERSION OF THE forProduct METHOD */
 		// let detailViewController = APIDetailViewController.show(selectedAPI)
