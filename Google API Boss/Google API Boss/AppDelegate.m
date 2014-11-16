@@ -8,15 +8,17 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
-
-@end
-
 @implementation AppDelegate
+
+@synthesize apiDictionary;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    //perform calls for Json data asynchronously
+    
     return YES;
 }
 
@@ -40,6 +42,66 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+///////////////////////////////////////////
+//  CONNECTION HANDLING CODE
+///////////////////////////////////////////
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    //for json you do not translate it beforehand, it's handled as part of the process
+    //NSString *str = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+    [self mapJSON: data];
+}
+
+-(void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    NSLog(@"Connection has finished loading");
+}
+
+-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    NSLog(@"Connection did fail with err:%@", error);
+}
+
+///////////////////////////////////////////
+//  FIN
+///////////////////////////////////////////
+
+-(void)mapJSON: (NSData *) json {
+    NSError *error;
+    NSDictionary *values = [NSJSONSerialization JSONObjectWithData: json options: 0 error: &error];
+    
+    for(NSString *key in values) {
+        NSLog(@"KEY:%@", key);
+        if([key isEqualToString: @"message"]) {
+            NSLog(@"\n%@\n", [values valueForKey: key]);
+            return;
+        }
+    }
+    
+    NSLog(@"\n");
+    
+    NSDictionary *printers = [values valueForKey: @"printers"];
+    for(NSDictionary *dict in printers) {
+        //NSString *printerName = [[dict valueForKey: @"name"] lowercaseString];
+        ///////[self.printerList addObject: dict];
+        
+        /*  Handles AUTO sending a print job
+         if ([printerName rangeOfString:@"viewplus"].location != NSNotFound) {
+         NSLog(@"Target printer found!");
+         
+         [self submitPrintJob: dict];
+         break;
+         }
+         */
+    }
+    
+    //refresh our tableView with our new data!
+    //////[self.tableView reloadData];
+    
+    
+    if(error != nil) {
+        NSLog(@"Error with changing json into dictionary");
+        return;
+    }
 }
 
 @end
