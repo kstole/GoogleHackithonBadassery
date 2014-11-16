@@ -11,17 +11,21 @@ import Foundation
 class GoogleAPI: NSObject {
 	// MARK: Properties
 	
-	let kind: String
-	let id: String
-	let name: String
-	let version: String
-	let title: String
-	let apiDescription: String
-	let discoveryRestURL: String
-	let icon16: String
-	let icon32: String
+	let kind: String = ""
+	let id: String = ""
+	let name: String = ""
+	let version: String = ""
+	let title: String = ""
+	let apiDescription: String = ""
+	let discoveryRestURL: String = ""
+	let icon16: String = ""
+	let icon32: String = ""
 	
 	// MARK: Initializers
+	
+	init(title: String) {
+		self.title = title
+	}
 	
 	init(title: String, id: String, name: String, version: String, apiDescription: String, discoveryRestURL: String, icon16: String, icon32: String, kind: String) {
 		
