@@ -27,6 +27,8 @@
 
 -(void)fetchApiImage: (NSDictionary *) item;
 
+-(void)fetchAPiImageFromGapi: (GoogleAPI *) gapi;
+
 -(void)presentApiImage: (UIImage *) image;
 
 -(void)showSpecificApi: (GoogleAPI *) gapi;
