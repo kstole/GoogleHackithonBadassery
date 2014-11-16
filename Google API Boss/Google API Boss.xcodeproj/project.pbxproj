@@ -24,6 +24,10 @@
 		BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334791A180379000EA22F /* ResultsTableController.swift */; };
 		BD93347C1A180723000EA22F /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD93347B1A180723000EA22F /* GoogleAPI.swift */; };
 		BD9421C81A187C0600D91A4E /* AllAPITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9421C71A187C0600D91A4E /* AllAPITableViewController.swift */; };
+		BD9421D21A18961100D91A4E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9421D11A18961100D91A4E /* NotificationCenter.framework */; };
+		BD9421D71A18961100D91A4E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9421D61A18961100D91A4E /* TodayViewController.swift */; };
+		BD9421D91A18961100D91A4E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9421D81A18961100D91A4E /* MainInterface.storyboard */; };
+		BD9421DC1A18961100D91A4E /* Google API Boss Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD9421CF1A18961100D91A4E /* Google API Boss Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BDBCF3B21A1821D1007E9393 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBCF3B11A1821D1007E9393 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +39,28 @@
 			remoteGlobalIDString = A9596AC51A17E8C9002CD1D7;
 			remoteInfo = "Google API Boss";
 		};
+		BD9421DA1A18961100D91A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9596ABE1A17E8C8002CD1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD9421CE1A18961100D91A4E;
+			remoteInfo = "Google API Boss Widget";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD9421E01A18961100D91A4E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BD9421DC1A18961100D91A4E /* Google API Boss Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A9596AC61A17E8C9002CD1D7 /* Google API Boss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google API Boss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +88,11 @@
 		BD9334791A180379000EA22F /* ResultsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
 		BD93347B1A180723000EA22F /* GoogleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAPI.swift; sourceTree = "<group>"; };
 		BD9421C71A187C0600D91A4E /* AllAPITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllAPITableViewController.swift; sourceTree = "<group>"; };
+		BD9421CF1A18961100D91A4E /* Google API Boss Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Google API Boss Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9421D11A18961100D91A4E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		BD9421D51A18961100D91A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9421D61A18961100D91A4E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BD9421D81A18961100D91A4E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		BDBCF3B01A1821D1007E9393 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDBCF3B11A1821D1007E9393 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +112,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD9421CC1A18961100D91A4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9421D21A18961100D91A4E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +128,8 @@
 			children = (
 				A9596AC81A17E8C9002CD1D7 /* Google API Boss */,
 				A9596AE21A17E8C9002CD1D7 /* Google API BossTests */,
+				BD9421D31A18961100D91A4E /* Google API Boss Widget */,
+				BD9421D01A18961100D91A4E /* Frameworks */,
 				A9596AC71A17E8C9002CD1D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +139,7 @@
 			children = (
 				A9596AC61A17E8C9002CD1D7 /* Google API Boss.app */,
 				A9596ADF1A17E8C9002CD1D7 /* Google API BossTests.xctest */,
+				BD9421CF1A18961100D91A4E /* Google API Boss Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +207,32 @@
 			name = tempClasses;
 			sourceTree = "<group>";
 		};
+		BD9421D01A18961100D91A4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD9421D11A18961100D91A4E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD9421D31A18961100D91A4E /* Google API Boss Widget */ = {
+			isa = PBXGroup;
+			children = (
+				BD9421D61A18961100D91A4E /* TodayViewController.swift */,
+				BD9421D81A18961100D91A4E /* MainInterface.storyboard */,
+				BD9421D41A18961100D91A4E /* Supporting Files */,
+			);
+			path = "Google API Boss Widget";
+			sourceTree = "<group>";
+		};
+		BD9421D41A18961100D91A4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD9421D51A18961100D91A4E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,10 +243,12 @@
 				A9596AC21A17E8C9002CD1D7 /* Sources */,
 				A9596AC31A17E8C9002CD1D7 /* Frameworks */,
 				A9596AC41A17E8C9002CD1D7 /* Resources */,
+				BD9421E01A18961100D91A4E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD9421DB1A18961100D91A4E /* PBXTargetDependency */,
 			);
 			name = "Google API Boss";
 			productName = "Google API Boss";
@@ -204,6 +273,23 @@
 			productReference = A9596ADF1A17E8C9002CD1D7 /* Google API BossTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BD9421CE1A18961100D91A4E /* Google API Boss Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD9421DD1A18961100D91A4E /* Build configuration list for PBXNativeTarget "Google API Boss Widget" */;
+			buildPhases = (
+				BD9421CB1A18961100D91A4E /* Sources */,
+				BD9421CC1A18961100D91A4E /* Frameworks */,
+				BD9421CD1A18961100D91A4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Google API Boss Widget";
+			productName = "Google API Boss Widget";
+			productReference = BD9421CF1A18961100D91A4E /* Google API Boss Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,6 +305,9 @@
 					A9596ADE1A17E8C9002CD1D7 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = A9596AC51A17E8C9002CD1D7;
+					};
+					BD9421CE1A18961100D91A4E = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -237,6 +326,7 @@
 			targets = (
 				A9596AC51A17E8C9002CD1D7 /* Google API Boss */,
 				A9596ADE1A17E8C9002CD1D7 /* Google API BossTests */,
+				BD9421CE1A18961100D91A4E /* Google API Boss Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +350,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9421CD1A18961100D91A4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9421D91A18961100D91A4E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +389,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD9421CB1A18961100D91A4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9421D71A18961100D91A4E /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = A9596AC51A17E8C9002CD1D7 /* Google API Boss */;
 			targetProxy = A9596AE01A17E8C9002CD1D7 /* PBXContainerItemProxy */;
+		};
+		BD9421DB1A18961100D91A4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD9421CE1A18961100D91A4E /* Google API Boss Widget */;
+			targetProxy = BD9421DA1A18961100D91A4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -404,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Google API Boss/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Google API Boss/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,6 +571,33 @@
 			};
 			name = Release;
 		};
+		BD9421DE1A18961100D91A4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Google API Boss Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD9421DF1A18961100D91A4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Google API Boss Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +627,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BD9421DD1A18961100D91A4E /* Build configuration list for PBXNativeTarget "Google API Boss Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD9421DE1A18961100D91A4E /* Debug */,
+				BD9421DF1A18961100D91A4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
