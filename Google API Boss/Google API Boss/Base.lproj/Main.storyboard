@@ -85,7 +85,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="bDn-rK-H2g" kind="push" id="e3O-mT-tQ4"/>
+                                    <action selector="listAllAPIs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hE-sv-8Nb"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="CLr-rC-yTG">
@@ -231,7 +231,7 @@
         <!--AllAPI Table View Controller-->
         <scene sceneID="E0s-qZ-Obn">
             <objects>
-                <viewController id="bDn-rK-H2g" customClass="AllAPITableViewController" customModule="Google_API_Boss" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AllAPITableViewController" id="bDn-rK-H2g" customClass="AllAPITableViewController" customModule="Google_API_Boss" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sae-Lp-xa4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

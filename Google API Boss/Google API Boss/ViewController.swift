@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+	@IBAction func listAllAPIs(sender: UIButton) {
+		let nextVC:AllAPITableViewController = AllAPITableViewController()
+		self.presentViewController(nextVC, animated: true, completion: nil)
+	}
 
     /*
     // MARK: - Navigation

@@ -18,7 +18,7 @@ class BaseTableViewController: UITableViewController {
 		}
 		
 		struct TableViewCell {
-			static let identifier = "cellID"
+			static let identifier = "api_list_cell"
 		}
 	}
 	
