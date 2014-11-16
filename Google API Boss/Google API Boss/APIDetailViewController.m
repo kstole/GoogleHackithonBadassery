@@ -14,12 +14,30 @@
 @synthesize apiDescrip;
 @synthesize apiImage;
 @synthesize currentApi;
+@synthesize randomButton;
+
+-(id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if(self) {
+        self.shouldShowRandom = true;
+    }
+    return self;
+}
 
 -(void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self onRandomSelected: 0];
+    if(self.shouldShowRandom) {
+        [self onRandomSelected: 0];
+    } else {
+        [randomButton setHidden: YES];
+    }
+}
+
+-(void)showSpecificApiAtIndex:(int)index {
+    self.shouldShowRandom = false;
+    [self fetchApiWithIndex: index];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,19 +51,37 @@
     
     NSArray *array = [dict valueForKey: @"items"];
     int random = arc4random()%[array count];
-    NSDictionary *item = [array objectAtIndex:random];
+    [self fetchApiWithIndex: random];
+}
+
+-(void)fetchApiWithIndex: (int) index {
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSDictionary *dict = delegate.apiDictionary;
+    
+    NSArray *array = [dict valueForKey: @"items"];
+    NSDictionary *item = [array objectAtIndex: index];
     
     self.currentApi = item;
     
     apiTitle.text = [item valueForKey: @"title"];
     apiDescrip.text = [item valueForKey: @"description"];
     
+    apiImage.image = nil;
+    
+    //set here
+    [self performSelectorInBackground: @selector(fetchApiImage:) withObject: item];
+}
+
+-(void)fetchApiImage: (NSDictionary *) item {
     NSDictionary *icons = [item valueForKey: @"icons"];
     NSURL *url = [NSURL URLWithString: [icons valueForKey: @"x32"]];
     NSData *data = [NSData dataWithContentsOfURL:url];
     UIImage *image = [UIImage imageWithData:data];
+    [self performSelectorOnMainThread: @selector(presentApiImage:) withObject: image waitUntilDone: NO];
+}
+
+-(void)presentApiImage: (UIImage *) image {
     apiImage.image = image;
-    
 }
 
 -(IBAction)onInterestedSelected:(id)sender {
