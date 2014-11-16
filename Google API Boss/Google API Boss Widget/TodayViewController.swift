@@ -14,8 +14,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+		let pick = arc4random_uniform(4)
         // Do any additional setup after loading the view from its nib.
-		apiLabel.text = "Google Maps API"
+		switch pick {
+		case 1: apiLabel.text = "Google Maps API"
+		case 2: apiLabel.text = "Adsense Management API"
+		case 3: apiLabel.text = "Google Analytics API"
+		default: apiLabel.text = "Calendar API"
+		}
+		
     }
     
     override func didReceiveMemoryWarning() {
