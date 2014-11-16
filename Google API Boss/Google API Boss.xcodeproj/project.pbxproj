@@ -17,6 +17,9 @@
 		A9596AF81A17EC4F002CD1D7 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AF61A17EC4F002CD1D7 /* SearchViewController.xib */; };
 		A9596AFC1A17EC99002CD1D7 /* AllAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */; };
 		A9596AFD1A17EC99002CD1D7 /* AllAPIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */; };
+		A96CB9081A1866220088797F /* MoreAPIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96CB9061A1866220088797F /* MoreAPIDetailViewController.m */; };
+		A96CB9091A1866220088797F /* MoreAPIDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96CB9071A1866220088797F /* MoreAPIDetailViewController.xib */; };
+		A96CB9111A186C710088797F /* trees_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = A96CB9101A186C710088797F /* trees_blur.png */; };
 		BD9334731A17F189000EA22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334711A17F189000EA22F /* ViewController.swift */; };
 		BD9334741A17F189000EA22F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9334721A17F189000EA22F /* ViewController.xib */; };
 		BD9334761A180046000EA22F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334751A180046000EA22F /* BaseTableViewController.swift */; };
@@ -54,6 +57,10 @@
 		A9596AF91A17EC99002CD1D7 /* AllAPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllAPIViewController.h; path = ../AllAPIViewController.h; sourceTree = "<group>"; };
 		A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllAPIViewController.m; path = ../AllAPIViewController.m; sourceTree = "<group>"; };
 		A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllAPIViewController.xib; path = ../AllAPIViewController.xib; sourceTree = "<group>"; };
+		A96CB9051A1866220088797F /* MoreAPIDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreAPIDetailViewController.h; sourceTree = "<group>"; };
+		A96CB9061A1866220088797F /* MoreAPIDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreAPIDetailViewController.m; sourceTree = "<group>"; };
+		A96CB9071A1866220088797F /* MoreAPIDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreAPIDetailViewController.xib; sourceTree = "<group>"; };
+		A96CB9101A186C710088797F /* trees_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trees_blur.png; sourceTree = "<group>"; };
 		BD93346C1A17F038000EA22F /* Google API Boss-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Google API Boss-Bridging-Header.h"; sourceTree = "<group>"; };
 		BD9334711A17F189000EA22F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD9334721A17F189000EA22F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -125,6 +132,9 @@
 				A9596AF51A17EC4F002CD1D7 /* SearchViewController.m */,
 				A9596AF61A17EC4F002CD1D7 /* SearchViewController.xib */,
 				BD93346C1A17F038000EA22F /* Google API Boss-Bridging-Header.h */,
+				A96CB9051A1866220088797F /* MoreAPIDetailViewController.h */,
+				A96CB9061A1866220088797F /* MoreAPIDetailViewController.m */,
+				A96CB9071A1866220088797F /* MoreAPIDetailViewController.xib */,
 			);
 			path = "Google API Boss";
 			sourceTree = "<group>";
@@ -132,6 +142,7 @@
 		A9596AC91A17E8C9002CD1D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A96CB9101A186C710088797F /* trees_blur.png */,
 				A9596ACA1A17E8C9002CD1D7 /* Info.plist */,
 				A9596ACB1A17E8C9002CD1D7 /* main.m */,
 			);
@@ -236,10 +247,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9334741A17F189000EA22F /* ViewController.xib in Resources */,
+				A96CB9091A1866220088797F /* MoreAPIDetailViewController.xib in Resources */,
 				A9596AD51A17E8C9002CD1D7 /* Main.storyboard in Resources */,
 				A9596ADA1A17E8C9002CD1D7 /* LaunchScreen.xib in Resources */,
 				A9596AD71A17E8C9002CD1D7 /* Images.xcassets in Resources */,
 				A9596AF81A17EC4F002CD1D7 /* SearchViewController.xib in Resources */,
+				A96CB9111A186C710088797F /* trees_blur.png in Resources */,
 				A9596AFD1A17EC99002CD1D7 /* AllAPIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9596AF71A17EC4F002CD1D7 /* SearchViewController.m in Sources */,
+				A96CB9081A1866220088797F /* MoreAPIDetailViewController.m in Sources */,
 				A9596AFC1A17EC99002CD1D7 /* AllAPIViewController.m in Sources */,
 				BD93347C1A180723000EA22F /* GoogleAPI.swift in Sources */,
 				BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */,

@@ -10,14 +10,46 @@
 
 @implementation APIDetailViewController
 
-- (void)viewDidLoad {
+@synthesize apiTitle;
+@synthesize apiDescrip;
+@synthesize apiImage;
+@synthesize currentApi;
+
+-(void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self onRandomSelected: 0];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)onRandomSelected:(id)sender {
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSDictionary *dict = delegate.apiDictionary;
+    
+    NSArray *array = [dict valueForKey: @"items"];
+    int random = arc4random()%[array count];
+    NSDictionary *item = [array objectAtIndex:random];
+    
+    self.currentApi = item;
+    
+    apiTitle.text = [item valueForKey: @"title"];
+    apiDescrip.text = [item valueForKey: @"description"];
+    
+    NSDictionary *icons = [item valueForKey: @"icons"];
+    NSURL *url = [NSURL URLWithString: [icons valueForKey: @"x32"]];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    UIImage *image = [UIImage imageWithData:data];
+    apiImage.image = image;
+    
+}
+
+-(IBAction)onInterestedSelected:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: [self.currentApi valueForKey: @"documentationLink"]]];
 }
 
 /*

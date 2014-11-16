@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic, readonly) NSDictionary *apiDictionary;
+@property (strong, nonatomic) NSMutableData *mutaData;
 
 -(void)mapJSON: (NSData *) json;
 
