@@ -18,6 +18,19 @@
     
     
     //perform calls for Json data asynchronously
+    NSURL *url = [[NSURL alloc] initWithString: @"https://www.googleapis.com/discovery/v1/apis?list"];
+    
+    
+    // Authorization: OAuth {YOUR_ACCESS_TOKEN}
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL: url];
+    //[request setValue: [NSString stringWithFormat: @"Bearer %@", [self auth].accessToken] forHTTPHeaderField: @"Authorization"];
+    //[request setHTTPMethod:@"GET"];
+    
+    NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest: request delegate: self];
+    if(!conn) {
+        NSLog(@"FAiled sending our rest Request");
+    }
     
     return YES;
 }
@@ -50,6 +63,7 @@
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     //for json you do not translate it beforehand, it's handled as part of the process
     //NSString *str = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+    //NSLog(@"%@", str);
     [self mapJSON: data];
 }
 
@@ -68,7 +82,9 @@
 -(void)mapJSON: (NSData *) json {
     NSError *error;
     NSDictionary *values = [NSJSONSerialization JSONObjectWithData: json options: 0 error: &error];
+    self.apiDictionary = values;
     
+    /*
     for(NSString *key in values) {
         NSLog(@"KEY:%@", key);
         if([key isEqualToString: @"message"]) {
@@ -76,24 +92,25 @@
             return;
         }
     }
+    */
     
-    NSLog(@"\n");
-    
-    NSDictionary *printers = [values valueForKey: @"printers"];
-    for(NSDictionary *dict in printers) {
-        //NSString *printerName = [[dict valueForKey: @"name"] lowercaseString];
-        ///////[self.printerList addObject: dict];
+    /*
+    NSDictionary *items = [values valueForKey: @"items"];
+    for(NSDictionary *api in items) {
         
-        /*  Handles AUTO sending a print job
-         if ([printerName rangeOfString:@"viewplus"].location != NSNotFound) {
-         NSLog(@"Target printer found!");
-         
-         [self submitPrintJob: dict];
-         break;
-         }
-         */
+        NSString *printerName = [[api valueForKey: @"title"] lowercaseString];
+        ///////[self.printerList addObject: dict];
+        NSLog(@"%@", printerName);
+        //Handles AUTO sending a print job
+        // if ([printerName rangeOfString:@"viewplus"].location != NSNotFound) {
+        // NSLog(@"Target printer found!");
+        //
+        // [self submitPrintJob: dict];
+        // break;
+        //}
     }
-    
+     */
+
     //refresh our tableView with our new data!
     //////[self.tableView reloadData];
     
