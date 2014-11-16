@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GoogleAPI: NSObject {
+@objc class GoogleAPI: NSObject {
 	// MARK: Properties
 	
 	let kind: String = ""
