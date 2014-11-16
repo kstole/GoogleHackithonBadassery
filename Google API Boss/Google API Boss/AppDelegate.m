@@ -82,7 +82,7 @@
 -(void)mapJSON: (NSData *) json {
     NSError *error;
     NSDictionary *values = [NSJSONSerialization JSONObjectWithData: json options: 0 error: &error];
-    self.apiDictionary = values;
+    apiDictionary = values;
     
     /*
     for(NSString *key in values) {

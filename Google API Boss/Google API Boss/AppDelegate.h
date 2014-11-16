@@ -11,7 +11,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate, NSURLConnectionDelegate, NSURLConnectionDataDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) NSDictionary *apiDictionary;
+@property (strong, nonatomic, readonly) NSDictionary *apiDictionary;
 
 -(void)mapJSON: (NSData *) json;
 
