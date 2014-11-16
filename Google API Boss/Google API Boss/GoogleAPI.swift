@@ -20,6 +20,7 @@ import Foundation
 	let discoveryRestURL: String = ""
 	let icon16: String = ""
 	let icon32: String = ""
+    let index: Int = 0
 	
 	// MARK: Initializers
 	

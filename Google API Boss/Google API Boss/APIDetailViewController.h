@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "Google_API_Boss-Swift.h"
 
 @interface APIDetailViewController : UIViewController
 
@@ -21,16 +20,12 @@
 
 -(IBAction)onRandomSelected:(id)sender;
 
--(void)fetchApiWithIndex: (int) index;
+-(void)showSpecificApi:(int) index;
 
 -(IBAction)onInterestedSelected:(id)sender;
 
 -(void)fetchApiImage: (NSDictionary *) item;
 
--(void)fetchAPiImageFromGapi: (GoogleAPI *) gapi;
-
 -(void)presentApiImage: (UIImage *) image;
-
--(void)showSpecificApi: (GoogleAPI *) gapi;
 
 @end

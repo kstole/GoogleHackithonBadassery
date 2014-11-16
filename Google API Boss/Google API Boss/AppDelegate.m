@@ -104,6 +104,8 @@
         NSLog(@"Error with changing json into dictionary:%@", error);
         self.mutaData = [[NSMutableData alloc] initWithData: json];
         return;
+    } else {
+        
     }
 }
 
