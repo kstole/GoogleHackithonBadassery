@@ -66,16 +66,18 @@ class AllAPITableViewController: BaseTableViewController {
 			selectedAPI = googleAPIs[indexPath.row]
 		}
 		else { // filtered list
-			selectedAPI = resultsTableController.filteredProducts[indexPath.row]
+			//selectedAPI = resultsTableController.filteredProducts[indexPath.row]
 		}
 		
 		// Set up the detail view controller to show.
-		let detailViewController = DetailViewController.forProduct(selectedProduct)
+		/* REQUIRES SOME OBJECTIVE-C VERSION OF THE forProduct METHOD */
+		// let detailViewController = DetailViewController.forAPI(selectedAPI)
 		
 		// Note: Should not be necessary but current iOS 8.0 bug requires it.
 		tableView.deselectRowAtIndexPath(tableView.indexPathForSelectedRow()!, animated: false)
 		
-		navigationController?.pushViewController(detailViewController, animated: true)
+		/* STILL REQUIRED FOR SELECTION */
+		// navigationController?.pushViewController(detailViewController, animated: true)
 	}
 
     /*
