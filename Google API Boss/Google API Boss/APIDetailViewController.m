@@ -35,7 +35,7 @@
     }
 }
 
--(void)showSpecificApi:(int) index {
+-(void)showSpecificApi:(NSInteger) index {
     
     //set here
     [self fetchApiWithIndex: index];

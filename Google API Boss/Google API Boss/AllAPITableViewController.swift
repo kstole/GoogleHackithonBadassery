@@ -11,15 +11,27 @@ import UIKit
 class AllAPITableViewController: BaseTableViewController, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating {
 	
 	let fullAPIDict = (UIApplication.sharedApplication().delegate as AppDelegate).apiDictionary
-	// let apiDict = aDelagate.apiDictionary
+	
+	//let gooAPIs = fullAPIDict["items"]
 	
 	let googleAPIs = [
 		GoogleAPI(title: "Ad Exchange Buyer API"),
+		GoogleAPI(title: "Ad Exchange Seller API"),
+		GoogleAPI(title: "Admin Directory API"),
+		GoogleAPI(title: "Email Migration API v2"),
+		GoogleAPI(title: "Admin Reports API"),
+		GoogleAPI(title: "AdSense Management API"),
+		GoogleAPI(title: "AdSense Host API"),
+		GoogleAPI(title: "Google Analytics API"),
+		GoogleAPI(title: "Google Play Android Developer API"),
+		GoogleAPI(title: "Google Apps Activity API"),
+		GoogleAPI(title: "Google App State API"),
+		GoogleAPI(title: "Enterprise Audit API"),
+		GoogleAPI(title: "Google Compute Engine Autoscaler API"),
 		GoogleAPI(title: "BigQuery API"),
+		GoogleAPI(title: "Blogger API"),
 		GoogleAPI(title: "Calendar API")
 	]
-	//let apiDict: [String: String] = ["title1": "Ad Exchange Buyer API", "title2": "BigQuery API", "title3": "Calendar API"]
-	//let apiArray = ["Ad Exchange Buyer API", "BigQuery API", "Calendar API"]
 	
 	// Search controller to help us with filtering.
 	var searchController: UISearchController!
@@ -170,7 +182,7 @@ class AllAPITableViewController: BaseTableViewController, UISearchBarDelegate, U
         //todo FIX THIS
 		let detailViewController = storyboard.instantiateViewControllerWithIdentifier("api_detail_view") as APIDetailViewController
 		
-		detailViewController.showSpecificApi(selectedAPI.index)
+		detailViewController.showSpecificApi(selectedAPI.index as NSInteger)
 		
 		// Set up the detail view controller to show.
 		/* REQUIRES SOME OBJECTIVE-C VERSION OF THE forProduct METHOD */
@@ -180,7 +192,8 @@ class AllAPITableViewController: BaseTableViewController, UISearchBarDelegate, U
 		tableView.deselectRowAtIndexPath(tableView.indexPathForSelectedRow()!, animated: false)
 		
 		/* STILL REQUIRED FOR SELECTION */
-		navigationController?.pushViewController(detailViewController, animated: true)
+		self.navigationController?.pushViewController(detailViewController, animated: true)
+		//navigationController?.presentViewController(detailViewController, animated: true, completion: nil)
 	}
 
     /*

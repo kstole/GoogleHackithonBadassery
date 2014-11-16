@@ -20,7 +20,7 @@
 
 -(IBAction)onRandomSelected:(id)sender;
 
--(void)showSpecificApi:(int) index;
+-(void)showSpecificApi:(NSInteger) index;
 
 -(IBAction)onInterestedSelected:(id)sender;
 
