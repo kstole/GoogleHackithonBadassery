@@ -40,7 +40,6 @@ class BaseTableViewController: UITableViewController {
 	
 	func configureCell(cell: UITableViewCell, forGoogleAPI api: GoogleAPI) {
 		cell.textLabel.text = api.kind
-		
 		cell.detailTextLabel?.text = "APIicon"
 	}
 	

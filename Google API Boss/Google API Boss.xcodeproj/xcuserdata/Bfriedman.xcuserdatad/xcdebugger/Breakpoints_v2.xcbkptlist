@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Google API Boss/BaseTableViewController.swift"
-            timestampString = "437788333.175662"
+            timestampString = "437792062.098307"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "configureCell(_:forGoogleAPI:)"
             landmarkType = "5">
          </BreakpointContent>
