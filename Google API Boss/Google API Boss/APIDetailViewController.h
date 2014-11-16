@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Google_API_Boss-Swift.h"
 
 @interface APIDetailViewController : UIViewController
 
@@ -28,6 +29,6 @@
 
 -(void)presentApiImage: (UIImage *) image;
 
--(void)showSpecificApiAtIndex: (int) index;
+-(void)showSpecificApi: (GoogleAPI *) gapi;
 
 @end

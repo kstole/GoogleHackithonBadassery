@@ -35,9 +35,9 @@
     }
 }
 
--(void)showSpecificApiAtIndex:(int)index {
-    self.shouldShowRandom = false;
-    [self fetchApiWithIndex: index];
+-(void)showSpecificApi:(GoogleAPI *) gapi {
+    //self.shouldShowRandom = false;
+    //[self fetchApiWithIndex: index];
 }
 
 - (void)didReceiveMemoryWarning {

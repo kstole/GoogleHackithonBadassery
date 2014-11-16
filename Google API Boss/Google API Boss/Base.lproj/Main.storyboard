@@ -364,6 +364,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215688589999999" green="0.66274511810000003" blue="0.33333334329999997" alpha="1" colorSpace="deviceRGB"/>
