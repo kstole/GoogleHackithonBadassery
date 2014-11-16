@@ -104,19 +104,6 @@
         NSLog(@"Error with changing json into dictionary:%@", error);
         self.mutaData = [[NSMutableData alloc] initWithData: json];
         return;
-    } else {
-        //export it all into GoogleAPI;
-        AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        NSDictionary *dict = delegate.apiDictionary;
-        
-        NSArray *array = [dict valueForKey: @"items"];
-        
-        
-        
-        //NSDictionary *item = [array objectAtIndex: index];
-        //apiTitle.text = [item valueForKey: @"title"];
-        //apiDescrip.text = [item valueForKey: @"description"];
-        
     }
 }
 

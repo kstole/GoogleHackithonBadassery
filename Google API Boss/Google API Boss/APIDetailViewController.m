@@ -36,8 +36,21 @@
 }
 
 -(void)showSpecificApi:(GoogleAPI *) gapi {
-    //self.shouldShowRandom = false;
-    //[self fetchApiWithIndex: index];
+    self.shouldShowRandom = false;
+    apiTitle.text = gapi.title;
+    apiDescrip.text = gapi.apiDescription;
+    
+    apiImage.image = nil;
+    
+    //set here
+    [self performSelectorInBackground: @selector(fetchAPiImageFromGapi:) withObject: gapi];
+}
+
+-(void)fetchAPiImageFromGapi: (GoogleAPI *) gapi {
+    NSURL *url = [NSURL URLWithString: gapi.icon32];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    UIImage *image = [UIImage imageWithData:data];
+    [self performSelectorOnMainThread: @selector(presentApiImage:) withObject: image waitUntilDone: NO];
 }
 
 - (void)didReceiveMemoryWarning {
