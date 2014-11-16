@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseTableTableViewController: UITableViewController {
+class BaseTableViewController: UITableViewController {
 	
 	// MARK: Types
 	
@@ -38,8 +38,8 @@ class BaseTableTableViewController: UITableViewController {
 	
 	// MARK:
 	
-	func configureCell(cell: UITableViewCell, forAPI api: API) {
-		cell.textLabel.text = API.title
+	func configureCell(cell: UITableViewCell, forGoogleAPI api: GoogleAPI) {
+		cell.textLabel.text = api.kind
 		
 		cell.detailTextLabel?.text = "APIicon"
 	}

@@ -8,5 +8,6 @@
 
 import UIKit
 
-class ResultsTableController: BaseTableViewController {
+class ResultsTableViewController: BaseTableViewController {
+	
 }

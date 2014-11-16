@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GoogleAPI: NSObject, NSCoding {
+class GoogleAPI: NSObject {
 	// MARK: Properties
 	
 	let kind: String
@@ -16,17 +16,23 @@ class GoogleAPI: NSObject, NSCoding {
 	let name: String
 	let version: String
 	let title: String
-	let description: String
+	let apiDescription: String
 	let discoveryRestURL: String
 	let icon16: String
 	let icon32: String
 	
 	// MARK: Initializers
 	
-	init(title: String, data1: String, data2: String, data3: String) {
+	init(title: String, id: String, name: String, version: String, apiDescription: String, discoveryRestURL: String, icon16: String, icon32: String, kind: String) {
+		
+		self.kind = kind
+		self.id = id
+		self.name = name
+		self.version = version
 		self.title = title
-		self.data1 = data1
-		self.data2 = data2
-		self.data3 = data3
+		self.apiDescription = apiDescription
+		self.discoveryRestURL = discoveryRestURL
+		self.icon16 = icon16
+		self.icon32 = icon32
 	}
 }
