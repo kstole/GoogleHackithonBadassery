@@ -21,7 +21,6 @@
 		BD9334731A17F189000EA22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334711A17F189000EA22F /* ViewController.swift */; };
 		BD9334741A17F189000EA22F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9334721A17F189000EA22F /* ViewController.xib */; };
 		BD9334761A180046000EA22F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334751A180046000EA22F /* BaseTableViewController.swift */; };
-		BD9334781A180334000EA22F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334771A180334000EA22F /* MainTableViewController.swift */; };
 		BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334791A180379000EA22F /* ResultsTableController.swift */; };
 		BD93347C1A180723000EA22F /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD93347B1A180723000EA22F /* GoogleAPI.swift */; };
 		BD9421C81A187C0600D91A4E /* AllAPITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9421C71A187C0600D91A4E /* AllAPITableViewController.swift */; };
@@ -61,7 +60,6 @@
 		BD9334711A17F189000EA22F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD9334721A17F189000EA22F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		BD9334751A180046000EA22F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
-		BD9334771A180334000EA22F /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		BD9334791A180379000EA22F /* ResultsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
 		BD93347B1A180723000EA22F /* GoogleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAPI.swift; sourceTree = "<group>"; };
 		BD9421C71A187C0600D91A4E /* AllAPITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllAPITableViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				BDBCF3B01A1821D1007E9393 /* AppDelegate.h */,
 				BDBCF3B11A1821D1007E9393 /* AppDelegate.m */,
 				BD9334751A180046000EA22F /* BaseTableViewController.swift */,
-				BD9334771A180334000EA22F /* MainTableViewController.swift */,
 				BD9334791A180379000EA22F /* ResultsTableController.swift */,
 				BD7DE4341A186FA1002CC2FB /* tempClasses */,
 				BD93347B1A180723000EA22F /* GoogleAPI.swift */,
@@ -280,7 +277,6 @@
 				BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */,
 				BDBCF3B21A1821D1007E9393 /* AppDelegate.m in Sources */,
 				BD9334731A17F189000EA22F /* ViewController.swift in Sources */,
-				BD9334781A180334000EA22F /* MainTableViewController.swift in Sources */,
 				A9596ACC1A17E8C9002CD1D7 /* main.m in Sources */,
 				BD9334761A180046000EA22F /* BaseTableViewController.swift in Sources */,
 				A9596AF21A17EC05002CD1D7 /* APIDetailViewController.m in Sources */,

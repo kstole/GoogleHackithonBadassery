@@ -21,6 +21,9 @@ class AllAPITableViewController: BaseTableViewController {
 	//let apiDict: [String: String] = ["title1": "Ad Exchange Buyer API", "title2": "BigQuery API", "title3": "Calendar API"]
 	//let apiArray = ["Ad Exchange Buyer API", "BigQuery API", "Calendar API"]
 	
+	// Secondary search results table view.
+	var resultsTableController: ResultsTableController!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
