@@ -18,6 +18,7 @@
 		A96CB9081A1866220088797F /* MoreAPIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96CB9061A1866220088797F /* MoreAPIDetailViewController.m */; };
 		A96CB9091A1866220088797F /* MoreAPIDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96CB9071A1866220088797F /* MoreAPIDetailViewController.xib */; };
 		A96CB9111A186C710088797F /* trees_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = A96CB9101A186C710088797F /* trees_blur.png */; };
+		BD3C4EF01A191D710053C603 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD3C4EEF1A191D710053C603 /* TableCell.xib */; };
 		BD9334731A17F189000EA22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334711A17F189000EA22F /* ViewController.swift */; };
 		BD9334741A17F189000EA22F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD9334721A17F189000EA22F /* ViewController.xib */; };
 		BD9334761A180046000EA22F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334751A180046000EA22F /* BaseTableViewController.swift */; };
@@ -81,6 +82,7 @@
 		A96CB9061A1866220088797F /* MoreAPIDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreAPIDetailViewController.m; sourceTree = "<group>"; };
 		A96CB9071A1866220088797F /* MoreAPIDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreAPIDetailViewController.xib; sourceTree = "<group>"; };
 		A96CB9101A186C710088797F /* trees_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trees_blur.png; sourceTree = "<group>"; };
+		BD3C4EEF1A191D710053C603 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		BD93346C1A17F038000EA22F /* Google API Boss-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Google API Boss-Bridging-Header.h"; sourceTree = "<group>"; };
 		BD9334711A17F189000EA22F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD9334721A17F189000EA22F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				A9596AD31A17E8C9002CD1D7 /* Main.storyboard */,
 				A9596AD61A17E8C9002CD1D7 /* Images.xcassets */,
 				A9596AD81A17E8C9002CD1D7 /* LaunchScreen.xib */,
+				BD3C4EEF1A191D710053C603 /* TableCell.xib */,
 				A9596AC91A17E8C9002CD1D7 /* Supporting Files */,
 				A9596AEF1A17EC05002CD1D7 /* APIDetailViewController.h */,
 				A9596AF01A17EC05002CD1D7 /* APIDetailViewController.m */,
@@ -343,6 +346,7 @@
 				A9596ADA1A17E8C9002CD1D7 /* LaunchScreen.xib in Resources */,
 				A9596AD71A17E8C9002CD1D7 /* Images.xcassets in Resources */,
 				A9596AF81A17EC4F002CD1D7 /* SearchViewController.xib in Resources */,
+				BD3C4EF01A191D710053C603 /* TableCell.xib in Resources */,
 				A96CB9111A186C710088797F /* trees_blur.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
