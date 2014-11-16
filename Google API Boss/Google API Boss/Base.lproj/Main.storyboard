@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="-52" y="263"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="tP2-cu-M82">
             <objects>
-                <viewController id="3ck-U8-zc4" customClass="APIViewController" sceneMemberID="viewController">
+                <viewController id="3ck-U8-zc4" customClass="APIDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vql-j2-Z2f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,6 +174,9 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="expandApiSelected:" destination="3ck-U8-zc4" eventType="touchUpInside" id="hGX-c0-be7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oif-X2-SXc">
                                 <rect key="frame" x="16" y="414" width="288" height="41"/>
@@ -190,11 +193,18 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="randomApiSelected:" destination="3ck-U8-zc4" eventType="touchUpInside" id="zqw-uy-qoa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215688589999999" green="0.66274511810000003" blue="0.33333334329999997" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="A1s-SF-Qvi"/>
+                    <connections>
+                        <outlet property="apiDescription" destination="EGt-ZA-9BC" id="Md9-tc-hJ2"/>
+                        <outlet property="apiTitle" destination="AzF-qA-kXa" id="7JV-Dz-W0H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTZ-0r-tnn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,7 +239,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="h01-me-DO1">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="api_list_cell" rowHeight="53" id="h01-me-DO1">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h01-me-DO1" id="LKN-zp-gS0">
@@ -309,7 +319,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="gpK-kh-FdR">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="find_api_cell" rowHeight="53" id="gpK-kh-FdR">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gpK-kh-FdR" id="dAQ-aM-rUi">

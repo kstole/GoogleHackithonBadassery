@@ -8,10 +8,6 @@
 
 #import "APIDetailViewController.h"
 
-@interface APIDetailViewController ()
-
-@end
-
 @implementation APIDetailViewController
 
 - (void)viewDidLoad {
