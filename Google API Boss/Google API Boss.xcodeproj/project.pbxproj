@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A9596ACC1A17E8C9002CD1D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596ACB1A17E8C9002CD1D7 /* main.m */; };
-		A9596ACF1A17E8C9002CD1D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596ACE1A17E8C9002CD1D7 /* AppDelegate.m */; };
 		A9596AD51A17E8C9002CD1D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9596AD31A17E8C9002CD1D7 /* Main.storyboard */; };
 		A9596AD71A17E8C9002CD1D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9596AD61A17E8C9002CD1D7 /* Images.xcassets */; };
 		A9596ADA1A17E8C9002CD1D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AD81A17E8C9002CD1D7 /* LaunchScreen.xib */; };
 		A9596AE61A17E8C9002CD1D7 /* Google_API_BossTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AE51A17E8C9002CD1D7 /* Google_API_BossTests.m */; };
-		A9596AF21A17EC05002CD1D7 /* APIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AF01A17EC05002CD1D7 /* APIViewController.m */; };
+		A9596AF21A17EC05002CD1D7 /* APIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AF01A17EC05002CD1D7 /* APIDetailViewController.m */; };
 		A9596AF31A17EC05002CD1D7 /* APIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AF11A17EC05002CD1D7 /* APIViewController.xib */; };
 		A9596AF71A17EC4F002CD1D7 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AF51A17EC4F002CD1D7 /* SearchViewController.m */; };
 		A9596AF81A17EC4F002CD1D7 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AF61A17EC4F002CD1D7 /* SearchViewController.xib */; };
@@ -25,6 +24,7 @@
 		BD9334781A180334000EA22F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334771A180334000EA22F /* MainTableViewController.swift */; };
 		BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9334791A180379000EA22F /* ResultsTableController.swift */; };
 		BD93347C1A180723000EA22F /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD93347B1A180723000EA22F /* GoogleAPI.swift */; };
+		BDBCF3B21A1821D1007E9393 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBCF3B11A1821D1007E9393 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,16 +41,14 @@
 		A9596AC61A17E8C9002CD1D7 /* Google API Boss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google API Boss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9596ACA1A17E8C9002CD1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9596ACB1A17E8C9002CD1D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A9596ACD1A17E8C9002CD1D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A9596ACE1A17E8C9002CD1D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A9596AD41A17E8C9002CD1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9596AD61A17E8C9002CD1D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9596AD91A17E8C9002CD1D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A9596ADF1A17E8C9002CD1D7 /* Google API BossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Google API BossTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9596AE41A17E8C9002CD1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9596AE51A17E8C9002CD1D7 /* Google_API_BossTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Google_API_BossTests.m; sourceTree = "<group>"; };
-		A9596AEF1A17EC05002CD1D7 /* APIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIViewController.h; sourceTree = "<group>"; };
-		A9596AF01A17EC05002CD1D7 /* APIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIViewController.m; sourceTree = "<group>"; };
+		A9596AEF1A17EC05002CD1D7 /* APIDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIDetailViewController.h; sourceTree = "<group>"; };
+		A9596AF01A17EC05002CD1D7 /* APIDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIDetailViewController.m; sourceTree = "<group>"; };
 		A9596AF11A17EC05002CD1D7 /* APIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APIViewController.xib; sourceTree = "<group>"; };
 		A9596AF41A17EC4F002CD1D7 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		A9596AF51A17EC4F002CD1D7 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -65,6 +63,8 @@
 		BD9334771A180334000EA22F /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		BD9334791A180379000EA22F /* ResultsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableController.swift; sourceTree = "<group>"; };
 		BD93347B1A180723000EA22F /* GoogleAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAPI.swift; sourceTree = "<group>"; };
+		BDBCF3B01A1821D1007E9393 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BDBCF3B11A1821D1007E9393 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +108,9 @@
 			children = (
 				A9596AF91A17EC99002CD1D7 /* AllAPIViewController.h */,
 				A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */,
+				BDBCF3B01A1821D1007E9393 /* AppDelegate.h */,
+				BDBCF3B11A1821D1007E9393 /* AppDelegate.m */,
 				A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */,
-				A9596ACD1A17E8C9002CD1D7 /* AppDelegate.h */,
-				A9596ACE1A17E8C9002CD1D7 /* AppDelegate.m */,
 				BD9334751A180046000EA22F /* BaseTableViewController.swift */,
 				BD9334771A180334000EA22F /* MainTableViewController.swift */,
 				BD9334791A180379000EA22F /* ResultsTableController.swift */,
@@ -121,8 +121,8 @@
 				A9596AD61A17E8C9002CD1D7 /* Images.xcassets */,
 				A9596AD81A17E8C9002CD1D7 /* LaunchScreen.xib */,
 				A9596AC91A17E8C9002CD1D7 /* Supporting Files */,
-				A9596AEF1A17EC05002CD1D7 /* APIViewController.h */,
-				A9596AF01A17EC05002CD1D7 /* APIViewController.m */,
+				A9596AEF1A17EC05002CD1D7 /* APIDetailViewController.h */,
+				A9596AF01A17EC05002CD1D7 /* APIDetailViewController.m */,
 				A9596AF11A17EC05002CD1D7 /* APIViewController.xib */,
 				A9596AF41A17EC4F002CD1D7 /* SearchViewController.h */,
 				A9596AF51A17EC4F002CD1D7 /* SearchViewController.m */,
@@ -262,16 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9596ACF1A17E8C9002CD1D7 /* AppDelegate.m in Sources */,
 				A9596AF71A17EC4F002CD1D7 /* SearchViewController.m in Sources */,
 				A9596AFC1A17EC99002CD1D7 /* AllAPIViewController.m in Sources */,
 				BD93347C1A180723000EA22F /* GoogleAPI.swift in Sources */,
 				BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */,
+				BDBCF3B21A1821D1007E9393 /* AppDelegate.m in Sources */,
 				BD9334731A17F189000EA22F /* ViewController.swift in Sources */,
 				BD9334781A180334000EA22F /* MainTableViewController.swift in Sources */,
 				A9596ACC1A17E8C9002CD1D7 /* main.m in Sources */,
 				BD9334761A180046000EA22F /* BaseTableViewController.swift in Sources */,
-				A9596AF21A17EC05002CD1D7 /* APIViewController.m in Sources */,
+				A9596AF21A17EC05002CD1D7 /* APIDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

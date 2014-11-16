@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Uphouseworks. All rights reserved.
 //
 
-#import "APIViewController.h"
+#import "APIDetailViewController.h"
 
 @interface APIViewController ()
 
