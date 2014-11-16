@@ -1,5 +1,5 @@
 //
-//  APIViewController.h
+//  APIDetailViewController.h
 //  Google API Boss
 //
 //  Created by Benjamin Friedman on 11/15/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface APIViewController : UIViewController
+@interface APIDetailViewController : UIViewController
 
 @end

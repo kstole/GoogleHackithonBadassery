@@ -1,18 +1,18 @@
 //
-//  APIViewController.m
+//  APIDetailViewController.m
 //  Google API Boss
 //
 //  Created by Benjamin Friedman on 11/15/14.
 //  Copyright (c) 2014 Uphouseworks. All rights reserved.
 //
 
-#import "APIViewController.h"
+#import "APIDetailViewController.h"
 
-@interface APIViewController ()
+@interface APIDetailViewController ()
 
 @end
 
-@implementation APIViewController
+@implementation APIDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
