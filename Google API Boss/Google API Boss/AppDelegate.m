@@ -12,7 +12,6 @@
 
 @synthesize apiDictionary;
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
@@ -61,10 +60,13 @@
 //  CONNECTION HANDLING CODE
 ///////////////////////////////////////////
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    //for json you do not translate it beforehand, it's handled as part of the process
-    //NSString *str = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
-    //NSLog(@"%@", str);
-    [self mapJSON: data];
+	
+	if(self.mutaData) {
+		[self.mutaData appendData: data];
+		data = self.mutaData;
+	}
+	
+	[self mapJSON: data];
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -80,10 +82,15 @@
 ///////////////////////////////////////////
 
 -(void)mapJSON: (NSData *) json {
-    NSError *error;
-    NSDictionary *values = [NSJSONSerialization JSONObjectWithData: json options: 0 error: &error];
-    apiDictionary = values;
-    
+	NSError *error;
+	NSDictionary *values = [NSJSONSerialization JSONObjectWithData: json options: NSJSONReadingAllowFragments error: &error];
+	apiDictionary = values;
+	
+	if(error != nil) {
+		NSLog(@"Error with changing json into dictionary:%@", error);
+		self.mutaData = [[NSMutableData alloc] initWithData: json];
+		return;
+	}
     /*
     for(NSString *key in values) {
         NSLog(@"KEY:%@", key);

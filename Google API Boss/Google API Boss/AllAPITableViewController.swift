@@ -8,10 +8,18 @@
 
 import UIKit
 
-class AllAPITableViewController: UITableViewController {
+class AllAPITableViewController: BaseTableViewController {
 	
-	let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+	let aDelagate = (UIApplication.sharedApplication().delegate as AppDelegate).apiDictionary
+	// let apiDict = aDelagate.apiDictionary
 	
+	let googleAPIs = [
+		GoogleAPI(title: "Ad Exchange Buyer API"),
+		GoogleAPI(title: "BigQuery API"),
+		GoogleAPI(title: "Calendar API")
+	]
+	let apiDict: [String: String] = ["title1": "Ad Exchange Buyer API", "title2": "BigQuery API", "title3": "Calendar API"]
+	let apiArray = ["Ad Exchange Buyer API", "BigQuery API", "Calendar API"]
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,62 +38,22 @@ class AllAPITableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 1
-    }
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return googleAPIs.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(Constants.TableViewCell.identifier, forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
+		let api = apiArray[indexPath.row]
+		//configureCell(cell, forProduct: api)
+		
 
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation
