@@ -15,8 +15,6 @@
 		A9596AF21A17EC05002CD1D7 /* APIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AF01A17EC05002CD1D7 /* APIDetailViewController.m */; };
 		A9596AF71A17EC4F002CD1D7 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AF51A17EC4F002CD1D7 /* SearchViewController.m */; };
 		A9596AF81A17EC4F002CD1D7 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AF61A17EC4F002CD1D7 /* SearchViewController.xib */; };
-		A9596AFC1A17EC99002CD1D7 /* AllAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */; };
-		A9596AFD1A17EC99002CD1D7 /* AllAPIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */; };
 		A96CB9081A1866220088797F /* MoreAPIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96CB9061A1866220088797F /* MoreAPIDetailViewController.m */; };
 		A96CB9091A1866220088797F /* MoreAPIDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96CB9071A1866220088797F /* MoreAPIDetailViewController.xib */; };
 		A96CB9111A186C710088797F /* trees_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = A96CB9101A186C710088797F /* trees_blur.png */; };
@@ -54,9 +52,6 @@
 		A9596AF41A17EC4F002CD1D7 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		A9596AF51A17EC4F002CD1D7 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		A9596AF61A17EC4F002CD1D7 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		A9596AF91A17EC99002CD1D7 /* AllAPIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllAPIViewController.h; path = ../AllAPIViewController.h; sourceTree = "<group>"; };
-		A9596AFA1A17EC99002CD1D7 /* AllAPIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllAPIViewController.m; path = ../AllAPIViewController.m; sourceTree = "<group>"; };
-		A9596AFB1A17EC99002CD1D7 /* AllAPIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllAPIViewController.xib; path = ../AllAPIViewController.xib; sourceTree = "<group>"; };
 		A96CB9051A1866220088797F /* MoreAPIDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreAPIDetailViewController.h; sourceTree = "<group>"; };
 		A96CB9061A1866220088797F /* MoreAPIDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreAPIDetailViewController.m; sourceTree = "<group>"; };
 		A96CB9071A1866220088797F /* MoreAPIDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreAPIDetailViewController.xib; sourceTree = "<group>"; };
@@ -113,7 +108,6 @@
 			children = (
 				BDBCF3B01A1821D1007E9393 /* AppDelegate.h */,
 				BDBCF3B11A1821D1007E9393 /* AppDelegate.m */,
-				BD0D35301A182C23002BB6FA /* AllAPITableViewController.swift */,
 				BD9334751A180046000EA22F /* BaseTableViewController.swift */,
 				BD9334771A180334000EA22F /* MainTableViewController.swift */,
 				BD9334791A180379000EA22F /* ResultsTableController.swift */,
@@ -259,7 +253,6 @@
 				A9596AD71A17E8C9002CD1D7 /* Images.xcassets in Resources */,
 				A9596AF81A17EC4F002CD1D7 /* SearchViewController.xib in Resources */,
 				A96CB9111A186C710088797F /* trees_blur.png in Resources */,
-				A9596AFD1A17EC99002CD1D7 /* AllAPIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,11 +272,9 @@
 			files = (
 				A9596AF71A17EC4F002CD1D7 /* SearchViewController.m in Sources */,
 				A96CB9081A1866220088797F /* MoreAPIDetailViewController.m in Sources */,
-				A9596AFC1A17EC99002CD1D7 /* AllAPIViewController.m in Sources */,
 				BD93347C1A180723000EA22F /* GoogleAPI.swift in Sources */,
 				BD93347A1A180379000EA22F /* ResultsTableController.swift in Sources */,
 				BDBCF3B21A1821D1007E9393 /* AppDelegate.m in Sources */,
-				BD0D35311A182C23002BB6FA /* AllAPITableViewController.swift in Sources */,
 				BD9334731A17F189000EA22F /* ViewController.swift in Sources */,
 				BD9334781A180334000EA22F /* MainTableViewController.swift in Sources */,
 				A9596ACC1A17E8C9002CD1D7 /* main.m in Sources */,
